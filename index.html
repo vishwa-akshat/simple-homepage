@@ -12,5 +12,89 @@
         />
         <title>Simple Homepage</title>
     </head>
-    <body></body>
+    <body>
+        <div class="container">
+            <nav class="navbar-wrapper">
+                <div class="navbar">
+                    <img
+                        src="./assets/alarado-icon-homepage.svg"
+                        alt="logo"
+                        class="logo"
+                    />
+                    <div class="nav-links">
+                        <div class="link link-active">About</div>
+                        <div class="link">Product</div>
+                        <div class="link">Resource</div>
+                        <div class="link">Contact</div>
+                    </div>
+                    <label class="toggle-container" for="toggle-button">
+                        <input type="checkbox" id="toggle-button" />
+                        <span class="toggle-button"></span>
+                    </label>
+
+                    <div class="hamburger-menu" id="hamburger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+            <main class="hero-wrapper">
+                <div class="hero">
+                    <section class="left-section">
+                        <h3 class="hero-sub-heading">
+                            😎 Simple way to communicate
+                        </h3>
+                        <h1 class="hero-heading">
+                            Actions for Accessibility in Design
+                        </h1>
+                        <p class="hero-para">
+                            The fastest way to build and deploy websites with
+                            resusable components.
+                        </p>
+                        <div class="btns-wrapper">
+                            <button class="primary-btn">Get Started</button>
+                            <button class="secondary-btn">Get live demo</button>
+                        </div>
+                        <div class="promises-wrapper">
+                            <div class="promise">
+                                <img
+                                    src="./assets/Done_ring_round_fill.svg"
+                                    alt="check icon"
+                                    class="check-icon"
+                                />
+                                <p class="promise-para">
+                                    No credit card required
+                                </p>
+                            </div>
+                            <div class="promise">
+                                <img
+                                    src="./assets/Done_ring_round_fill.svg"
+                                    alt="check icon"
+                                    class="check-icon"
+                                />
+                                <p class="promise-para">
+                                    No software to install
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="right-section">
+                        <img
+                            src="./assets/hero-image-simple-homepage.png"
+                            alt="hero img"
+                            class="hero-img"
+                        />
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+    <script>
+        document
+            .getElementById("hamburger-menu")
+            .addEventListener("click", function () {
+                this.classList.toggle("active");
+            });
+    </script>
 </html>
